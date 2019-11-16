@@ -1,4 +1,4 @@
-# MNT Image processing Lectures [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ImagingLectures/MNT_Lectures2019/master)
+# MNT Image processing Lectures [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ImagingLectures/MNT_Lectures2019/master) ![](https://github.com/ImagingLectures/MNT_Lectures2019/workflows/build_notebooks/badge.svg)
 The final lecture notes will be published the evening before each lecture.
 
 ## Lecture 1: November 18th - Ground Truth and Datasets (Lecturer: Kevin Mader)
