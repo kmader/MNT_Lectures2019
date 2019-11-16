@@ -35,11 +35,12 @@ jobs:
         export PATH="$HOME/miniconda3/bin:$PATH"
         source activate testenv
         shopt -s globstar
-        for nb in **/*ipynb; do   
+        for nb in **/*ipynb; do
           jupyter nbconvert --ExecutePreprocessor.timeout=3600 --ExecutePreprocessor.kernel_name=testkernel --execute "$nb" --to markdown & tee nb_to_md.txt;
           traceback=$(grep "Traceback (most recent call last):" nb_to_md.txt);
           if [[ $traceback ]]; then
             echo "$traceback";
+            cat nb_to_md.txt;
             exit 1;
           fi;
         done
